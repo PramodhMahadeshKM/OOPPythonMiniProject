@@ -2,6 +2,14 @@
 ## Introduction
 This project is useful for implementing different features for customers using the telephone service by utilizing the Python OOP concepts.
 
+## Features
+* It is subdivided into two - Prepaid and Postpaid Customers.
+* To make a call
+* To add balance
+* To pay bill
+* To update mail id
+* To display account info
+
 ## High Level Requirements: 
 | ID | Description | Status |
 | ----- | ----------- | ------- |
