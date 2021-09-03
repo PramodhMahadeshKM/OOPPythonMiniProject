@@ -32,7 +32,7 @@ class PrepaidCustomer(Customer):
 
     def read_data(self):
         'Function to get data of the user from backend(.txt file here)'
-        file = open('3_Implementation\Prepaid.txt', 'r')
+        file = open('Prepaid.txt', 'r')
         total_list = []
         for line in file:
             k = line.rstrip()
@@ -186,7 +186,7 @@ class PostpaidCustomer(Customer):
 
     def read_data(self):
         'Function to get data of the user from backend(.txt file here)'
-        file = open('3_Implementation\Postpaid.txt', 'r')
+        file = open('Postpaid.txt', 'r')
         total_list = []
         for line in file:
             k = line.rstrip()
