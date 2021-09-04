@@ -1,4 +1,4 @@
-from telephone import Customer
+
 from telephone import PrepaidCustomer
 from telephone import PostpaidCustomer
 
