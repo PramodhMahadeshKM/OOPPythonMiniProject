@@ -4,6 +4,10 @@
 * It consists of Prepaid and Postpaid features like making a call, adding balance, paying bill etc.
 * The info of the user will be stored in database. When the user uses any feature, these info is passed with the help of .txt files which represent data from backend.
 
+## Badges
+| Build |
+| [![Build](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml/badge.svg)](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml) |
+
 ## Folder Structure
 Folder                     | Description
 -------------------        | -----------------------------------------
