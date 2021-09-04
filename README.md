@@ -7,6 +7,7 @@
 ## Badges
 | Build |
 | - |
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3b87420d2de406fa21b771797e8c934)](https://app.codacy.com/gh/PramodhMahadeshKM/OOPPythonMiniProject?utm_source=github.com&utm_medium=referral&utm_content=PramodhMahadeshKM/OOPPythonMiniProject&utm_campaign=Badge_Grade_Settings)
 | [![Build](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml/badge.svg)](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml) |
 
 ## Folder Structure
