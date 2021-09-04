@@ -6,6 +6,7 @@
 
 ## Badges
 | Build |
+| - |
 | [![Build](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml/badge.svg)](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml) |
 
 ## Folder Structure
