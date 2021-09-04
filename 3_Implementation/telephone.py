@@ -1,39 +1,35 @@
-'This is the source file for the telephone project'
+"""This is the source file for the telephone project."""
 import re
 
 
 class Customer:
 
-    'Parent class'
-
     def __init__(self,idn=None,name=None,email=None,number=None):
-        """Parent class constructor"""
+        """Parent class constructor."""
         self.idn=idn
         self.name=name
         self.email=email
         self.number=number
 
     def update_email(self,new_email):
-        """Function to update mail id"""
+        """Function to update mail id."""
         self.email=new_email
         print('Updated successfully!\n')
 
     def display(self):
-        """Function to display info"""
+        """Function to display info."""
         print(f'ID = {self.idn}\nName = {self.name}')
         print(f'Email = {self.email}\nPhone no. = {self.number}')
 
 class PrepaidCustomer(Customer):
 
-    """Prepaid child class"""
-
     def __init__(self,idn=None,name=None,email=None,number=None,balance=None):
-        """Prepaid class constructor"""
+        """Prepaid class constructor."""
         super().__init__(idn,name,email,number)
         self.balance=balance
 
     def read_data(self):
-        """Function to get data of the user from backend(.txt file here)"""
+        """Function to get data of the user from backend(.txt file here)."""
         file = open('Prepaid.txt', 'r')
         total_list = []
         for line in file:
@@ -43,7 +39,7 @@ class PrepaidCustomer(Customer):
         return total_list
 
     def get_data(self,total_list):
-        """Function to check the list"""
+        """Function to check the list."""
         size = len(total_list)
         if size != 5:
             print('Incorrect no. of data in prepaid.txt\n')
@@ -95,7 +91,7 @@ class PrepaidCustomer(Customer):
             return 0
 
     def make_call(self,duration):
-        """Function to make call"""
+        """Function to make call."""
         cost = duration * 0.5
         if self.balance<-10:
             print('Add balance to make a call\n')
@@ -108,7 +104,7 @@ class PrepaidCustomer(Customer):
             return  self.balance
 
     def add_balance(self,money):
-        """Function to add balance"""
+        """Function to add balance."""
         if money<0:
             print('Please add money\n')
             return -1
@@ -121,11 +117,11 @@ class PrepaidCustomer(Customer):
 
 
     def display_balance(self):
-        """Function to display balance"""
+        """Function to display balance."""
         print(f'The balance is {self.balance} Rs.\n')
 
     def prepaid_features(self):
-        """Function to display and implement features"""
+        """Function to display and implement features."""
         loop='Y'
         while loop in ('y','Y'):
             print(f'\nWelcome {self.name}\n')
@@ -173,23 +169,21 @@ class PrepaidCustomer(Customer):
             loop=input('Would you like to go back to features page?(y/n): ')
 
     def display(self):
-        """Function to display info"""
+        """Function to display info."""
         super().display()
         print(f'Balance = {self.balance} Rs.\n')
 
 
 class PostpaidCustomer(Customer):
 
-    """Postpaid child class"""
-
     def __init__(self,idn=None,name=None,email=None,number=None,time=None):
-        """Postpaid class constructor"""
+        """Postpaid class constructor."""
         super().__init__(idn, name, email, number)
         self.time=time
 
 
     def read_data(self):
-        """Function to get data of the user from backend(.txt file here)"""
+        """Function to get data of the user from backend(.txt file here)."""
         file = open('Postpaid.txt', 'r')
         total_list = []
         for line in file:
@@ -199,7 +193,7 @@ class PostpaidCustomer(Customer):
         return total_list
 
     def get_data(self,total_list):
-        """Function to pass data"""
+        """Function to pass data."""
         size = len(total_list)
         if size != 5:
             print('Incorrect no. of data in prepaid.txt\n')
@@ -252,7 +246,7 @@ class PostpaidCustomer(Customer):
             return 0
 
     def make_call(self,duration):
-        """Function to make call"""
+        """Function to make call."""
         if duration<0:
             print('Enter correct value')
             return -1
@@ -265,7 +259,7 @@ class PostpaidCustomer(Customer):
             return self.bill
 
     def pay_bill(self,money):
-        """Function to pay bill"""
+        """Function to pay bill."""
         self.bill=self.time*0.4
         if money<=self.bill and money>0:
             self.bill-= money
@@ -279,11 +273,11 @@ class PostpaidCustomer(Customer):
             return -1
 
     def display_bill(self):
-        """Function to diplay bill"""
+        """Function to diplay bill."""
         print(f'The remaining bill is {self.bill} Rs.')
 
     def postpaid_features(self):
-        """Function to display and implement features"""
+        """Function to display and implement features."""
         loop='Y'
         while loop in ('y','Y'):
             print(f'\nWelcome {self.name}\n')
@@ -332,6 +326,6 @@ class PostpaidCustomer(Customer):
             loop=input('Would you like to go back to features page?(y/n): ')
 
     def display(self):
-        """Function to display info"""
+        """Function to display info."""
         super().display()
         print(f'Time conversed = {self.time} mins\nRemaining Bill = {self.bill} Rs.')
