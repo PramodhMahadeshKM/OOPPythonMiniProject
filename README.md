@@ -5,9 +5,9 @@
 * The info of the user will be stored in database. When the user uses any feature, these info is passed with the help of .txt files which represent data from backend.
 
 ## Badges
-| Build |
-| - |
-| [![Build](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml/badge.svg)](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml) |
+| Build | Codacy |
+| - | - |
+| [![Build](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml/badge.svg)](https://github.com/PramodhMahadeshKM/OOPPythonMiniProject/actions/workflows/build.yml) | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/25273466b92a430b86fad0b1c602cd38)](https://www.codacy.com/gh/PramodhMahadeshKM/OOPPythonMiniProject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PramodhMahadeshKM/OOPPythonMiniProject&amp;utm_campaign=Badge_Grade) |
 
 ## Folder Structure
 Folder                     | Description
